@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.piCover{
+  border-radius: 50%;
+  height: 25vw;
+  width: 30vw;
+  margin-top: 140px;
+  margin-left: 20px;
+  float: left;
+}
+
+
+
+
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.9585084033613446) 26%, rgba(47,112,189,1) 100%, rgba(0,87,255,0.30584733893557425) 100%);
+
+}
+
+  .adress{
+    background: rgba( 24, 24, 24, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 20vw;
+    display: inline-block;
+    padding: 15px;
+    color: rgb(111, 199, 246);
+    margin-top: 70px;
+    animation: myadress 2s 1 linear;
+
+}
+
+.fullName{
+  background: rgba( 24, 24, 24, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 31vw;
+    display: inline-block;
+padding: 20px;
+color: rgb(111, 199, 246);
+margin-top: 150px;
+animation: mymove 2s 1 linear;
+
+}
+
+.adress:hover{
+  padding: 25px;
+transition: 1s;
+}
+
+.fullName:hover{
+  padding: 30px ;
+  transition: 1s;
+
+}
+@keyframes mymove{
+  0% {transform:translate(0,0) ;}
+  50% {transform: translate(-100px,0);}
+  70% {transform: translate(100px,0);}
+  100% {transform: translate(0,0);}
+}
+
+@keyframes myadress{
+  0% {transform:translate(0,0) ;}
+  50% {transform: translate(100px,0);}
+  70% {transform: translate(-100px,0);}
+
+  100% {transform: translate(0,0);}
+}
